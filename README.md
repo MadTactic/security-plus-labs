@@ -24,7 +24,7 @@ Transitioning into remote IT support and security operations with a long-term go
 | 01 | [Finding Open Service Ports](labs/01-finding-open-service-ports/) | Threats & Attack Surfaces | Assisted | ✅ Complete |
 | 02 | [Using SET for Social Engineering](labs/02-social-engineering-set/) | Social Engineering | Assisted | ✅ Complete |
 | 03 | [Using Storage Encryption](labs/03-storage-encryption/) | Cryptography | Applied | ✅ Complete |
-| 04 | [Using Hashing and Salting](labs/04-hashing-and-salting/) | Cryptography | Assisted | ⬜ Not Started |
+| 04 | [Using Hashing and Salting](labs/04-hashing-and-salting/) | Cryptography | Assisted | ✅ Complete |
 | 05 | [Managing Password Security](labs/05-managing-password-security/) | Authentication | Assisted | ⬜ Not Started |
 | 06 | [Managing Permissions](labs/06-managing-permissions/) | Authorization & Access Control | Assisted | ⬜ Not Started |
 | 07 | [Setting Up Remote Access](labs/07-setting-up-remote-access/) | Secure Communications | Assisted | ⬜ Not Started |
@@ -49,7 +49,7 @@ Transitioning into remote IT support and security operations with a long-term go
 ## 📊 Progress
 
 ```
-Overall  ███░░░░░░░░░░░░░░░░░  3 / 22 labs complete
+Overall  ████░░░░░░░░░░░░░░░░  4 / 22 labs complete
 ```
 
 ---
