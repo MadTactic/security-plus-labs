@@ -27,7 +27,7 @@ Transitioning into remote IT support and security operations with a long-term go
 | 04 | [Using Hashing and Salting](labs/04-hashing-and-salting/) | Cryptography | Assisted | ✅ Complete |
 | 05 | [Managing Password Security](labs/05-managing-password-security/) | Authentication | Assisted | ✅ Complete |
 | 06 | [Managing Permissions](labs/06-managing-permissions/) | Authorization & Access Control | Assisted | ✅ Complete |
-| 07 | [Setting Up Remote Access](labs/07-setting-up-remote-access/) | Secure Communications | Assisted | ⬜ Not Started |
+| 07 | [Setting Up Remote Access](labs/07-setting-up-remote-access/) | Secure Communications | Assisted | ✅ Complete |
 | 08 | [Using IPsec Tunneling](labs/08-ipsec-tunneling/) | Secure Communications | Assisted | ⬜ Not Started |
 | 09 | [Exploiting and Detecting SQLi](labs/09-sql-injection/) | Application Vulnerabilities | Assisted | ⬜ Not Started |
 | 10 | [Performing Vulnerability Scans](labs/10-vulnerability-scanning/) | Vulnerability Management | Applied | ⬜ Not Started |
@@ -49,7 +49,7 @@ Transitioning into remote IT support and security operations with a long-term go
 ## 📊 Progress
 
 ```
-Overall  ██████░░░░░░░░░░░░░░  6 / 22 labs complete
+Overall  ███████░░░░░░░░░░░░░  7 / 22 labs complete
 ```
 
 ---
