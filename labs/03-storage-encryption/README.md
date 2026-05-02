@@ -1,7 +1,7 @@
 # 🔐 Lab 03 – Using Storage Encryption
 
 ![Platform](https://img.shields.io/badge/Platform-Windows%20Server%202019-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Tool](https://img.shields.io/badge/Tool-EFS%20%2B%20cipher-4B8BBE?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tools-EFS%20%7C%20cipher-4B8BBE?style=for-the-badge)
 ![Domain](https://img.shields.io/badge/Domain-Cryptography-red?style=for-the-badge)
 ![Cert](https://img.shields.io/badge/CompTIA-Security%2B-E02020?style=for-the-badge)
 
@@ -38,7 +38,7 @@ As a security team member at Structureality Inc., I was tasked with evaluating a
 ## 🗂️ Repository Structure
 
 ```
-lab-03-storage-encryption/
+labs/03-storage-encryption/
 ├── README.md
 └── screenshots/
     ├── 01-certificates-dir-created.png
@@ -57,7 +57,7 @@ lab-03-storage-encryption/
 
 ---
 
-## 🛡️ Part 1 - Setting Up the EFS Data Recovery Agent
+## 🛡️ Part 1 – Setting Up the EFS Data Recovery Agent
 
 Before encrypting any files, a Data Recovery Agent must be defined. Without one, any files encrypted by a user become permanently inaccessible if that user loses their EFS private key. The DRA acts as a safety net.
 
@@ -104,7 +104,7 @@ Here I can see the command completed successfully. Pat will be the standard user
 
 ---
 
-## 🔒 Part 2 - Encrypting Files with EFS
+## 🔒 Part 2 – Encrypting Files with EFS
 
 Signed in as Pat, I created three text files in `C:\SecReports` - `Jan-Security.txt`, `Feb-Security.txt`, and `Mar-Security.txt` - each containing the text `This is a security report.`
 
@@ -141,7 +141,7 @@ Here I can see Jan-Security and Feb-Security displayed in green indicating encry
 
 ---
 
-## 💥 Part 3 - Breaking Access via Password Change
+## 💥 Part 3 – Breaking Access via Password Change
 
 When an administrator changes a local user's password, Windows discards that user's EFS private key. This means the user loses access to their own encrypted files - even after signing back in with the new password.
 
@@ -169,7 +169,7 @@ Here I can see Windows returning a clear access denied message - `You do not hav
 
 ---
 
-## 🔑 Part 4 - DRA Recovery
+## 🔑 Part 4 – DRA Recovery
 
 ### Failed Decrypt Attempt Without the Private Key
 
@@ -256,3 +256,7 @@ The private key of the DRA.
 
 - [Microsoft EFS Documentation](https://docs.microsoft.com/en-us/windows/security/information-protection/encrypting-file-system/encrypting-file-system-overview)
 - CompTIA Security+ Objectives 1.4, 2.5, 3.3 & 5.1
+
+---
+
+*CompTIA Security+ SY0-701 | CertMaster Learn | Lab 03 of 22*

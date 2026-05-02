@@ -37,7 +37,7 @@ As a security team member at Structureality Inc., the goal of this lab is to eva
 ## 🗂️ Repository Structure
 
 ```
-lab-01-finding-open-service-ports/
+labs/01-finding-open-service-ports/
 ├── README.md
 └── screenshots/
     ├── 01-border-scan-full.png
@@ -55,7 +55,7 @@ lab-01-finding-open-service-ports/
 
 ---
 
-## 🌐 Exercise 1 – External Border Router Scan
+## 🌐 Part 1 – External Border Router Scan
 
 **Target:** `203.0.113.1` (Structureality border firewall, internet-facing interface)  
 **Position:** External subnet (internet simulation)
@@ -115,7 +115,7 @@ grep OS border-scan.nmap
 
 ---
 
-## 🏨 Exercise 2 – Guest Network Scan
+## 🏨 Part 2 – Guest Network Scan
 
 **Target:** `192.168.16.254` (guest network gateway/firewall)  
 **Position:** vGUEST network
@@ -180,7 +180,7 @@ The OS results were visible at the bottom of the full scan output (screenshot 06
 
 ---
 
-## 🖥️ Exercise 3 – Internal Server Scan
+## 🖥️ Part 3 – Internal Server Scan
 
 **Target:** `10.1.16.2` (legacy server in the Server subnet)  
 **Position:** vLAN_CLIENTS network
@@ -283,3 +283,7 @@ Close the exposed port, and configure service encryption.
 
 - [Nmap Official Documentation](https://nmap.org/docs.html)
 - CompTIA Security+ Objectives 2.2 & 2.3
+
+---
+
+*CompTIA Security+ SY0-701 | CertMaster Learn | Lab 01 of 22*

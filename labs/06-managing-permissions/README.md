@@ -220,3 +220,7 @@ Change. Share-level Change permission allows read, write, and delete over the ne
 - [Microsoft Docs: New-SmbShare](https://learn.microsoft.com/en-us/powershell/module/smbshare/new-smbshare)
 - [Linux man page: chmod](https://man7.org/linux/man-pages/man1/chmod.1.html)
 - CompTIA Security+ Objectives 2.5, 3.3, 4.6
+
+---
+
+*CompTIA Security+ SY0-701 | CertMaster Learn | Lab 06 of 22*

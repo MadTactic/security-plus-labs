@@ -38,7 +38,7 @@ After a rash of account breaches at Structureality Inc., I was tasked with evalu
 ## 🗂️ Repository Structure
 
 ```
-lab-05-managing-password-security/
+labs/05-managing-password-security/
 ├── README.md
 └── screenshots/
     ├── 01-users-txt-list.png
@@ -308,3 +308,7 @@ Longer length and increased complexity. Length adds the most value because the s
 - [SecLists Password Wordlists](https://github.com/danielmiessler/SecLists/tree/master/Passwords)
 - [Microsoft Docs: Set-ADDefaultDomainPasswordPolicy](https://learn.microsoft.com/en-us/powershell/module/activedirectory/set-addefaultdomainpasswordpolicy)
 - CompTIA Security+ Objectives 2.4, 2.5, 4.6, 5.1, 5.6
+
+---
+
+*CompTIA Security+ SY0-701 | CertMaster Learn | Lab 05 of 22*

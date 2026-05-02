@@ -39,7 +39,7 @@ In this lab I worked through three practical exercises covering how hashing is u
 ## 🗂️ Repository Structure
 
 ```
-lab-04-hashing-and-salting/
+labs/04-hashing-and-salting/
 ├── README.md
 └── screenshots/
     ├── 01-md5sum-forensic-image.png
@@ -212,3 +212,7 @@ A rainbow table is a precomputed database of hashes for common passwords. Saltin
 - [Digital Forensics Tool Testing (dftt.sourceforge.net)](http://dftt.sourceforge.net)
 - [John the Ripper Documentation](https://www.openwall.com/john/doc/)
 - CompTIA Security+ Objectives 2.4, 3.7
+
+---
+
+*CompTIA Security+ SY0-701 | CertMaster Learn | Lab 04 of 22*

@@ -9,18 +9,17 @@
 
 ## 📋 Overview
 
-As a security team member at Structureality Inc., I was tasked with configuring and validating an IPsec tunnel between two internal Windows Server hosts. The lab covered three exercises: first verifying the unencrypted network baseline, then building IPsec policies on both machines (one configured to attempt encryption with fallback allowed, the other configured to require it with no fallback), and finally using Wireshark to capture traffic before and after the policies were assigned to confirm the tunnel was actually working. The goal wasn't just to click through a wizard - it was to prove, through packet capture, that traffic I could read before the policies went live became unreadable after.
+As a security team member at Structureality Inc., I was tasked with configuring and validating an IPsec tunnel between two internal Windows Server hosts. The lab covered three exercises: first verifying the unencrypted network baseline, then building IPsec policies on both machines (one configured to attempt encryption with fallback allowed, the other configured to require it with no fallback), and finally using Wireshark to capture traffic before and after the policies were assigned to confirm the tunnel was actually working.
 
 ---
 
 ## 🎯 Objectives
 
-- Verify baseline network connectivity between two Windows Server hosts and a hosted web service
-- Configure a Windows IPsec policy on PC10 to attempt encrypted sessions with all hosts, with fallback to plaintext if negotiation fails
+- Verify baseline network connectivity and capture plaintext ICMP and HTTP traffic before any IPsec policy is assigned
+- Configure a Windows IPsec policy on PC10 to attempt encrypted sessions with fallback to plaintext if negotiation fails
 - Configure a Windows IPsec policy on PC20 to require encrypted sessions with no fallback allowed
-- Capture plaintext ICMP and HTTP traffic before IPsec policies are assigned to establish a baseline
 - Assign both IPsec policies and re-capture traffic to confirm ICMP between PC10 and PC20 disappears from the capture
-- Identify ISAKMP key negotiation traffic and ESP encrypted payload traffic in Wireshark to confirm tunnel establishment
+- Identify ISAKMP key negotiation and ESP encrypted payload traffic in Wireshark to confirm tunnel establishment
 
 ---
 
@@ -172,19 +171,19 @@ Here I can see ESP (Encapsulating Security Payload) packets flowing in both dire
 ## ❓ Comprehensive Questions
 
 **1. What are the three main types of IPsec policies that can be configured?**
-**Negotiate, Permit, and Block.** Negotiate causes the host to request IPsec-encrypted communications. Permit allows traffic through without requiring IPsec. Block prevents IPsec negotiation entirely. Request and Enable are not IPsec policy types.
+Negotiate, Permit, and Block. Negotiate requests IPsec-encrypted communications, Permit allows traffic without requiring IPsec, and Block prevents IPsec negotiation entirely. Request and Enable are not IPsec policy types.
 
 **2. What is the primary benefit of tunneling?**
-**Encryption.** Tunneling wraps the original packet inside another packet or encrypted container, hiding the contents from observers on the path. This is distinct from faster routing (tunnels don't improve routing performance), non-repudiation (a separate cryptographic property), or availability (tunnels don't inherently improve uptime).
+Encryption. Tunneling wraps the original packet inside an encrypted container, hiding its contents from observers on the path. It does not improve routing performance, provide non-repudiation, or increase availability on its own.
 
 **3. In the lab, why was PC10 unable to collect the packets from PC20 directed to the default gateway or the website?**
-**The packets from PC20 were not sent to the PC10 interface.** When PC20 communicates with the gateway or the DVWA server, that traffic follows its own routing path and is never forwarded through PC10's network interface. Wireshark on PC10 can only capture frames that actually arrive at PC10's adapter. The IPsec policy had no effect on this - those packets were invisible to PC10 both before and after the policies were assigned.
+The packets from PC20 were not sent to the PC10 interface. PC20's traffic to the gateway or DVWA server follows its own routing path and never reaches PC10's adapter, so Wireshark on PC10 cannot capture it. The IPsec policy had no bearing on this; those packets were invisible to PC10 both before and after assignment.
 
 **4. Which of the following are options for implementing encrypted tunnels for secure communications?**
-**TLS, SSH, and IPsec.** All three are protocols that can create encrypted tunnels for data in transit. DNS carries domain name resolution and has no built-in encryption for the tunnel use case. HTTP is plaintext. ICMP is a control/diagnostic protocol. FTP is plaintext file transfer.
+TLS, SSH, and IPsec. All three create encrypted tunnels for data in transit. DNS, HTTP, ICMP, and FTP do not provide tunnel encryption on their own.
 
 **5. Your company is implementing IPsec policies on all internal systems over a three-month rollout. What is the best choice during the initial phase?**
-**Allow fallback to unsecured communications if a secure connection cannot be established.** During a phased rollout, not every system will have IPsec configured on day one. Using the fallback option ensures that hosts already running the policy can still communicate with hosts that haven't been configured yet. Once the rollout is complete, the policy can be tightened to "require" across the board. Requiring IPsec on day one of a partial rollout would break communications to every unconfigured host.
+Allow fallback to unsecured communications if a secure connection cannot be established. During a phased rollout, not every system has IPsec on day one, so the fallback option keeps configured hosts reachable from unconfigured ones. The policy can be tightened to require encryption once the rollout is complete.
 
 ---
 

@@ -1,7 +1,7 @@
 # 🎭 Lab 02 – Using SET to Perform Social Engineering
 
 ![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Tool](https://img.shields.io/badge/Tool-SET%20%2B%20Metasploit-4B8BBE?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tools-SET%20%7C%20Metasploit-4B8BBE?style=for-the-badge)
 ![Domain](https://img.shields.io/badge/Domain-Social%20Engineering-red?style=for-the-badge)
 ![Cert](https://img.shields.io/badge/CompTIA-Security%2B-E02020?style=for-the-badge)
 
@@ -40,7 +40,7 @@ This lab covers three phases: exploring SET's capabilities, crafting and deliver
 ## 🗂️ Repository Structure
 
 ```
-lab-02-social-engineering-set/
+labs/02-social-engineering-set/
 ├── README.md
 └── screenshots/
     ├── 01-set-main-menu.png
@@ -233,3 +233,7 @@ Implement security awareness training, and configure email filtering controls.
 - [Social-Engineer Toolkit (SET) - TrustedSec](https://github.com/trustedsec/social-engineer-toolkit)
 - [Metasploit Documentation](https://docs.metasploit.com/)
 - CompTIA Security+ Objectives 2.2 & 5.6
+
+---
+
+*CompTIA Security+ SY0-701 | CertMaster Learn | Lab 02 of 22*
