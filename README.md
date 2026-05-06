@@ -30,7 +30,7 @@ Transitioning into remote IT support and security operations with a long-term go
 | 07 | [Setting Up Remote Access](labs/07-setting-up-remote-access/) | Secure Communications | Assisted | ✅ Complete |
 | 08 | [Using IPsec Tunneling](labs/08-ipsec-tunneling/) | Secure Communications | Assisted | ✅ Complete |
 | 09 | [Exploiting and Detecting SQLi](labs/09-sql-injection/) | Application Vulnerabilities | Assisted | ✅ Complete |
-| 10 | [Performing Vulnerability Scans](labs/10-vulnerability-scanning/) | Vulnerability Management | Applied | ⬜ Not Started |
+| 10 | [Performing Vulnerability Scans](labs/10-vulnerability-scanning/) | Vulnerability Management | Applied | ✅ Complete |
 | 11 | [Implementing a Firewall](labs/11-implementing-firewall/) | Network Security | Applied | ⬜ Not Started |
 | 12 | [Using Group Policy](labs/12-group-policy/) | Endpoint Security | Assisted | ⬜ Not Started |
 | 13 | [Hardening](labs/13-hardening/) | Endpoint Security | Applied | ⬜ Not Started |
@@ -49,7 +49,7 @@ Transitioning into remote IT support and security operations with a long-term go
 ## 📊 Progress
 
 ```
-Overall  █████████░░░░░░░░░░░  9 / 22 labs complete
+Overall  ██████████░░░░░░░░░░  10 / 22 labs complete
 ```
 
 ---
