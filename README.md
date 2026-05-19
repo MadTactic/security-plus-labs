@@ -12,7 +12,7 @@
 ## 👤 About
 
 **Andrew Campbell** | CompTIA A+, Network+ & Security+ Certified  
-Transitioning into remote IT support and security operations with a long-term goal of SOC Level 1 analysis.  
+Transitioning into remote IT support after a decade in emergency services and industrial operations.  
 📧 Acampbell1991@protonmail.com | 🔗 [LinkedIn](https://www.linkedin.com/in/campbell-it)
 
 ---
@@ -33,7 +33,7 @@ Transitioning into remote IT support and security operations with a long-term go
 | 10 | [Performing Vulnerability Scans](labs/10-vulnerability-scanning/) | Vulnerability Management | Applied | ✅ Complete |
 | 11 | [Implementing a Firewall](labs/11-implementing-firewall/) | Network Security | Applied | ✅ Complete |
 | 12 | [Using Group Policy](labs/12-group-policy/) | Endpoint Security | Assisted | ✅ Complete |
-| 13 | [Hardening](labs/13-hardening/) | Endpoint Security | Applied | ⬜ Not Started |
+| 13 | [Hardening](labs/13-hardening/) | Endpoint Security | Applied | ✅ Complete |
 | 14 | [Incident Response Detection](labs/14-incident-response-detection/) | Incident Response | Applied | ⬜ Not Started |
 | 15 | [Performing Digital Forensics](labs/15-digital-forensics/) | Digital Forensics | Applied | ⬜ Not Started |
 | 16 | [Using Network Sniffers](labs/16-network-sniffers/) | Data Sources & Monitoring | Applied | ⬜ Not Started |
@@ -49,7 +49,7 @@ Transitioning into remote IT support and security operations with a long-term go
 ## 📊 Progress
 
 ```
-Overall  ████████████░░░░░░░░  12 / 22 labs complete
+Overall  █████████████░░░░░░░  13 / 22 labs complete
 ```
 
 ---
@@ -87,7 +87,7 @@ lab-name/
 
 I built this to document real hands-on work, not just certification knowledge.  
 Each lab represents a practical skill I can speak to in an interview or apply on day one.  
-After completing these labs I will continue with the **TryHackMe SOC Level 1 path**.
+After completing these labs I will continue building hands-on experience through TryHackMe and personal lab work.
 
 ---
 
