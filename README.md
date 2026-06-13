@@ -34,7 +34,7 @@ Transitioning into remote IT support after a decade in emergency services and in
 | 11 | [Implementing a Firewall](labs/11-implementing-firewall/) | Network Security | Applied | ✅ Complete |
 | 12 | [Using Group Policy](labs/12-group-policy/) | Endpoint Security | Assisted | ✅ Complete |
 | 13 | [Hardening](labs/13-hardening/) | Endpoint Security | Applied | ✅ Complete |
-| 14 | [Incident Response Detection](labs/14-incident-response-detection/) | Incident Response | Applied | ⬜ Not Started |
+| 14 | [Incident Response Detection](labs/14-incident-response-detection/) | Incident Response | Applied | ✅ Complete |
 | 15 | [Performing Digital Forensics](labs/15-digital-forensics/) | Digital Forensics | Applied | ⬜ Not Started |
 | 16 | [Using Network Sniffers](labs/16-network-sniffers/) | Data Sources & Monitoring | Applied | ⬜ Not Started |
 | 17 | [Performing Root Cause Analysis](labs/17-root-cause-analysis/) | Alerting & Monitoring | Assisted | ⬜ Not Started |
@@ -49,7 +49,7 @@ Transitioning into remote IT support after a decade in emergency services and in
 ## 📊 Progress
 
 ```
-Overall  █████████████░░░░░░░  13 / 22 labs complete
+Overall  ██████████████░░░░░░  14 / 22 labs complete
 ```
 
 ---
